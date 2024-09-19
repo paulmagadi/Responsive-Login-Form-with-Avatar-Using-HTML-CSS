@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container {
+    width: 40%;
+    padding: 1em 2em;
+    border-radius: 8px;
+    font-weight: 500;
+    background-color: #7c07c0;
+    color: white;
+}
+
+.avatar {
+    text-align: center;
+}
+
+.avatar i {
+    font-size: 6rem;
+    color: white;
+}
+
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: .8em 2em;
+    margin: 1em 0;
+    border-radius: 24px;
+    border: none;
+    background-color: white;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+button {
+    padding: .8em 2em;
+    margin: 1em 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 24px;
+    background-color: rgb(98,230,245);
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancel-forgot-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cancel-button {
+    width: auto;
+    padding: .8em 2em;
+    background-color: #f44339;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .form-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 800px) {
+    .form-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        justify-content: flex-start;
+    }
+
+    .form-container {
+        width: 100%;
+        border-radius: 0 0 8px 8px;
+    }
+}
